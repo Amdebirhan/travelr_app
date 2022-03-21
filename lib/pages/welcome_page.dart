@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:travel_app/misc/colors.dart';
+import 'package:travel_app/widgets/buttons/responsive_button.dart';
 import 'package:travel_app/widgets/texts/app_large_text.dart';
 
 import '../widgets/texts/app_text.dart';
@@ -49,7 +50,11 @@ class _WelcomePageState extends State<WelcomePage> {
                                     "Mountain hiking gives you an incridable sence of freedom along with endurance test.",
                                 color: AppColors.textColor2,
                                 size: 16,
-                              ))
+                              )),
+                          SizedBox(
+                            height: 49,
+                          ),
+                          ResponsiveButtton(width:120)
                         ],
                       ),
                       Column(
